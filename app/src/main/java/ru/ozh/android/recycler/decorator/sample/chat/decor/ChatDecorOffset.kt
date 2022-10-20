@@ -10,16 +10,16 @@ import ru.ozh.android.recycler.decorator.sample.px
 class ChatDecorOffset : Decorator.OffsetDecor {
 
     override fun getItemOffsets(
-            outRect: Rect,
-            view: View,
-            recyclerView: RecyclerView,
-            state: RecyclerView.State
+        outRect: Rect,
+        view: View,
+        recyclerView: RecyclerView,
+        state: RecyclerView.State
     ) {
 
         val vh = recyclerView.getChildViewHolder(view)
-        if(vh !is ChatMessageController.Holder) {
+        if (vh !is ChatMessageController.Holder) {
             return
         }
-        outRect.set(0, 8.px, 0, 0)
+        outRect.set(0, 8.px, 0, 8.px)
     }
 }

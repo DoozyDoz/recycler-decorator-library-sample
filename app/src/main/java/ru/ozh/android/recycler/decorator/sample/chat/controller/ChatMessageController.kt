@@ -13,7 +13,13 @@ import ru.ozh.android.recycler.decorator.sample.chat.ChatObject
 class ChatMessageController : BindableItemController<ChatObject, Holder>() {
 
     override fun createViewHolder(parent: ViewGroup): Holder {
-        return Holder(ChatMessageLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return Holder(
+            ChatMessageLayoutBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemId(data: ChatObject): String {

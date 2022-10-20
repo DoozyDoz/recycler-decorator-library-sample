@@ -35,8 +35,8 @@ class ChatActivityView : AppCompatActivity() {
 
     val decorator by lazy<RecyclerView.ItemDecoration> {
         Decorator.Builder()
-            .underlay(CircleBarDecor())
-            .overlay(StickyHeaderDecor())
+            .underlay(CircleBarDecor()) //progress bar in the background
+            .overlay(StickyHeaderDecor()) // date header
             .underlay(chatController.viewType() to ChatMessageDecor(this))
             .overlay(ScrollBarDecor())
             .offset(chatController.viewType() to ChatDecorOffset())
