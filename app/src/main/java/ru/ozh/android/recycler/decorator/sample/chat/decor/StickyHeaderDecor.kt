@@ -8,7 +8,7 @@ import androidx.core.view.drawToBitmap
 import androidx.recyclerview.widget.RecyclerView
 import ru.ozh.android.recycler.decorator.lib.Decorator
 
-class StickyHeaderDecor() : Decorator.RecyclerViewDecor {
+class StickyHeaderDecor : Decorator.RecyclerViewDecor {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
